@@ -4,9 +4,9 @@ body {
     min-height: 100vh;
 
     background-color: #0b0d0c;
-    color: #b7ffb0;
+    color: #87cc77;
 
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Lucida Console', 'Courier New', Courier, monospace;
 
     display: flex;
     justify-content: center;
@@ -22,7 +22,8 @@ main {
 h1 {
     font-size: 3rem;
     margin: 10px 0 30px 0;
-    letter-spacing: 4px;
+    letter-spacing: 2px;
+    font-weight: normal;
 }
 
 p {
@@ -32,7 +33,7 @@ p {
 
 /* small system text */
 .small {
-    color: #657d62;
+    color: #6f8f6b;
     font-size: 0.8rem;
     letter-spacing: 2px;
 }
@@ -45,5 +46,11 @@ p {
 }
 
 .cursor {
-    animation: blink 1s steps(1) infinite;
+    animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
 }
