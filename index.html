@@ -9,23 +9,68 @@
     <title>sparebit.me</title>
 
     <link rel="stylesheet" href="style.css">
-    <link rel="icon"type="image/png" href="favicon.png">
+    <link rel="icon" type="image/png" href="favicon.png">
 </head>
 
 <body>
+    <header>
+        <p class="small">SPAREBIT SYSTEM // PERSONAL TERMINAL 2026</p>
+
+        <h1>root@sparebit:~$<span class="cursor">_</span></h1>
+
+        
+        <nav>
+            <div class="nav-item">
+                <span>01 </span>
+                <a href="#about">/about</a>
+                <span> who's behind the keyboard</span>
+            </div>
+
+            <div class="nav-item">
+                <span>02 </span>
+                <a href="#projects">/projects</a>
+                <span> things i'm working on</span>
+            </div>
+
+
+        </nav>
+    </header>
     <main>
-        <p class="small">SPAREBIT SYSTEM // 2026</p>
-
-        <h1>sparebit.me</h1>
-
         <p>
-            this little corner of the internet<br class="desktop-break">
-            is still under construction.
+            <br class="desktop-break">
+
         </p>
 
-        <p class="status">
-            > STATUS: BUILDING<span class="cursor">_</span>
-        </p>
+        <section id="about">
+            <h2>
+                /about
+            </h2>
+            <p class="about-text">
+                hello, i'm sparebit. i love computers, technology and figuring out
+                how things work. driven by curiosity, i spend my spare time tinkering,
+                experimenting and building little projects to see what i can learn
+                from it. 
+            </p>
+
+            <p class="about-text">
+                welcome to my little corner of the internet!
+            </p>
+        </section>
+        <section id="projects">
+            <h2>
+                /projects
+            </h2>
+            <article>
+                <div class="project-header">
+                    <h3>CLI messaging tool</h3>
+                    <span class="project-status">BUILDING</span>
+                </div>
+                <p class="project-description">
+                    a little command-line messaging tool for local network usage, built with python's socket module
+                </p>
+                <a href="https://github.com/mrjnssn/python-networking-project">see on Github</a>
+            </article>
+        </section>
     </main>
 </body>
 </html>
