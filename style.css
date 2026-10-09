@@ -229,6 +229,42 @@ article a:focus-visible {
     font-weight: normal;
 }
 
+.link-list {
+    list-style: none;
+    padding: 0;
+    padding-left: 24px;
+    margin: 0;
+}
+
+.link-list li {
+    margin-bottom: 24px;
+}
+
+.link-list a {
+        color: #87cc77;
+        font-size: 1.1rem;
+        text-decoration: none;
+        position: relative;
+}
+
+.link-list a::before {
+    content: ">";
+    position: absolute;
+    right: calc(100% + 1ch);
+    opacity: 0;
+}
+
+.link-list a:hover::before,
+.link-list a:focus-visible::before {
+    opacity: 1;
+}
+
+.link-list p {
+    color: #6f8f6b;
+    font-size: 0.9rem;
+    margin: 8px 0 0;
+}
+
 /* small system text */
 .small {
     color: #6f8f6b;
