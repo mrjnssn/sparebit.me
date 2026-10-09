@@ -295,4 +295,8 @@ article a:focus-visible {
     .nav-item span:last-child {
         display: none;
     }
+
+    .home .small {
+        font-size: 0.7rem;
+    }
 }
