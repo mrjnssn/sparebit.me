@@ -13,8 +13,31 @@ body {
 
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
     align-items: center;
+}
+
+.home {
+    justify-content: center;
+}
+
+.content-page {
+    justify-content: flex-start;
+}
+
+.content-page h1 {
+    font-size: 2rem;
+    font-weight: normal;
+    margin: 40px 0 40px;
+}
+
+.content-page main p {
+    color: #6f8f6b;
+    font-size: 1rem;
+    line-height: 1.8;
+}
+
+.content-page article {
+    margin-bottom: 20px;
 }
 
 header,
@@ -23,20 +46,25 @@ main {
     max-width: 700px;
 }
 
-header {
-    margin-bottom: 32px;
-}
-
 .tagline {
     margin-top: 0;
-    margin-bottom: 60px;
+    margin-bottom: 72px;
     color: #6f8f6b;
+}
+
+.nav-heading {
+    color: #6f8f6b;
+    font-size: 0.9rem;
+    font-weight: normal;
+    letter-spacing: 2px;
+    margin-bottom: 24px;
 }
 
 nav {
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: 16px;
+    margin: 0 10px 0;
 }
 
 nav a {
@@ -45,7 +73,7 @@ nav a {
 
 .nav-item {
     display: grid;
-    grid-template-columns: 2ch 10ch 1fr;
+    grid-template-columns: 3ch 12ch 1fr;
     align-items: baseline;
     column-gap: 16px;
 }
@@ -56,12 +84,26 @@ nav a {
 
 .nav-item a {
     color: #87cc77;
+    font-size: 1.25rem;
+    position: relative;
+}
+
+.nav-item a::before {
+    content: ">";
+    position: absolute;
+    left: -1.2ch;
+    opacity: 0;
+}
+
+.nav-item a:hover::before,
+.nav-item a:focus-visible::before{
+    opacity: 1;
 }
 
 nav a:hover,
 nav a:focus-visible {
     color: #87cc77;
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 section {
@@ -72,11 +114,20 @@ section {
 
 h1 {
     font-size: 3rem;
-    margin: 50px 0 80px 0;
+    margin: 40px 0 80px 0;
     letter-spacing: 2px;
     font-weight: normal;
 }
 
+.prompt {
+    margin: 60px 0 30px 0;
+    color: #6f8f6b;
+    font-size: 1.2rem;
+}
+
+.command {
+    color: #87cc77;
+}
 .cursor {
     color: #87cc77;
     animation: blink 1s step-end infinite;
@@ -91,6 +142,20 @@ h2 {
 p {
     font-size: 1.1rem;
     line-height: 1.7;
+}
+
+.back-link {
+    color: #6f8f6b;
+    font-size: 0.9rem;
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 24px;
+}
+
+.back-link:hover,
+.back-link:focus-visible {
+    color: #87cc77;
+    text-decoration: underline;
 }
 
 .about-text {
@@ -118,6 +183,7 @@ p {
 
 article {
     padding-bottom: 24px;
+    padding-top: 24px;
     border-bottom: 1px solid #283427;
 }
 
@@ -136,6 +202,23 @@ article a {
 article a:hover,
 article a:focus-visible {
     text-decoration: underline;
+}
+
+.note {
+    display: grid;
+    grid-template-columns: 10ch 1fr;
+    gap: 24px;
+}
+
+.note time {
+    color: #6f8f6b;
+    font-size: 0.9rem;
+}
+
+.note h3 {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: normal;
 }
 
 /* small system text */
