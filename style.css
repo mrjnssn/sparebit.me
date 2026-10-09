@@ -206,11 +206,19 @@ article a:focus-visible {
 
 .note {
     display: grid;
-    grid-template-columns: 10ch 1fr;
-    gap: 24px;
+    grid-template-columns: 1fr auto;
+    column-gap: 16px;
+    align-items: baseline;
+}
+
+.note-content {
+    grid-column: 1;
+    grid-row: 1;
 }
 
 .note time {
+    grid-column: 2;
+    grid-row: 1;
     color: #6f8f6b;
     font-size: 0.9rem;
 }
